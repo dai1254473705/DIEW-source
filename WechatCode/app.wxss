@@ -1,0 +1,129 @@
+/**app.wxss**/
+@import "/utils/wxParse/wxParse.wxss";
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  /*border: solid 1rpx #000;*/
+} 
+.hideshade {
+  position:fixed;
+  display:none;
+  width:100%;
+  height:100%;
+  z-index:9999;
+  top:0rpx;
+}
+.line {
+  height:1rpx;
+  background-color: #efefef;
+  width:100%;
+}
+.itembox {
+  border-bottom:solid 1rpx #efefef;
+  width:100%;
+  box-sizing: border-box;
+  padding:24rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.leftbox {
+  margin-right:36rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemimage {
+  display: flex;
+  flex:none;
+  align-self: flex-end;
+  width:225rpx;
+  height:149rpx;
+  overflow:hidden;
+  background-color: #898989;
+}
+.title {
+  color:#333;
+  font-size: 34rpx;
+  line-height: 40rpx;
+}
+.text {
+  color:#898989;
+  font-size:24rpx;
+}
+.smallavatar {
+  border: solid 2rpx #fff;
+  background-color: #efefef;
+  width: 46rpx;
+  height: 46rpx;
+  border-radius: 23rpx;
+  overflow: hidden;
+  box-sizing:border-box;
+}
+.bigavatar {
+  border: solid 3rpx #fff;
+  background-color: #efefef;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+  box-sizing:border-box;
+  flex:none;
+}
+
+.tag {
+  color: #0E99F3;
+  font-size: 20rpx;
+  height:24rpx;
+  padding:2rpx 4rpx;
+  border-radius: 5rpx;
+  border: solid 1rpx #0E99F3;
+  overflow: hidden;
+  display: inline-block;
+}
+.iteminfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+.view_num {
+  display: inline-block;
+}
+.icon_view {
+  width: 26rpx;
+  height:20rpx;
+  margin-right:10rpx;
+}
+.icon_zan {
+  width:24rpx;
+  height: 23rpx;
+  margin-right:10rpx;
+}
+.icon_rightarrow {
+  width:17rpx;
+  height:29rpx;
+}
+.nointernet {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 400rpx 0 0 0;
+  box-sizing: border-box;
+}
+.netimage{
+  width:175rpx;
+  height:175rpx;
+}
+.nettext{
+  text-align: center;
+  color:#999;
+  font-size:28rpx;
+  margin-top:40rpx;
+}

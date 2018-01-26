@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/history/history",
+        "pages/shouru/shouru",
+        "pages/detail/detail",
+        "pages/Disclaimer/Disclaimer",
+        "pages/detail_role/detail_role"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1C41B3",
+        "navigationBarTitleText": "新建查询",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#1C41B3",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "images/xinjian_active.png",
+                "iconPath": "images/xinjian.png",
+                "pagePath": "pages/index/index",
+                "text": "新建"
+            },
+            {
+                "selectedIconPath": "images/lishi_active.png",
+                "iconPath": "images/lishi.png",
+                "pagePath": "pages/history/history",
+                "text": "历史"
+            },
+            {
+                "selectedIconPath": "images/shouru_active.png",
+                "iconPath": "images/shouru.png",
+                "pagePath": "pages/shouru/shouru",
+                "text": "收益"
+            }
+        ]
+    }
+}

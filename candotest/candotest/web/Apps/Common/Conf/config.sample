@@ -1,0 +1,45 @@
+<?php
+
+return array(
+    
+	// 基本配置
+    'DEFAULT_MODULE' =>  'Admin',  // 默认模块
+    
+    // 定制错误页面：必须以域名开头，需要关闭调试模式
+	'ERROR_PAGE' => is_ssl() ? "https://" : "http://" . $_SERVER['HTTP_HOST'] . "/Public/home/custom/error.html",
+    
+	'URL_MODEL' => '2', //URL模式
+	'SESSION_AUTO_START' => 'true', //是否开启session
+    
+    
+	//数据库公共配置
+	'DB_TYPE' => 'mysql', // 数据库类型
+	'DB_HOST' => '127.0.0.1', // 服务器地址
+	'DB_NAME' => 'xxxx', // 数据库名
+	'DB_USER' => 'root', // 用户名
+	'DB_PWD' => '******', // 密码
+	'DB_PORT' => 3306, // 端口
+	'DB_PREFIX' => 'pre_', // 数据库表前缀 
+	'DB_CHARSET' => 'utf8', // 字符集
+	'DB_DEBUG' => true,
+	
+	// 用于发送邮件的smtp配置信息
+	'PHPMAIL_SMTP' => array(
+		'hostname' => 'smtp.163.com', //邮件服务器host
+		'port' => 25,	//邮件服务器端口
+		'username' => 'xxxx', //登录需要发送邮件的邮件服务器的用户名
+		'from' => 'admin@admin.com',	//发件人邮箱
+		'fromname' => '发件人昵称',	//发件人昵称
+		'password' => 'password',	//登录需要发送邮件的邮件服务器的密码
+		'charset' => 'utf-8',	//字符
+		'timeout' => 20,	//超时时间，默认秒
+	),
+    
+    
+    // 配置redis
+    "DATA_CACHE_TYPE" => "Redis",
+    "DATA_CACHE_PREFIX" => "dbr_",
+    "REDIS_HOST" => "127.0.0.1",
+    "REDIS_PORT" => "6379",
+    
+);

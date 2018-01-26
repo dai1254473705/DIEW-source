@@ -1,0 +1,14 @@
+/* shouru.wxss */
+.up-box{height:270px;background-color: #4E3F73;padding-top:40px;text-align: center;}
+.header-img{width:90px;height:90px;border-radius: 90px;margin:auto;}
+.shouyi{display:block;text-align: center;color:#fff;font-size:22px;margin-top:10px;}
+.tip-shouyi{color:#E6DDEE;margin-top:40px;}
+.shouyi-detail{padding:50px 0;}
+.detail-left{float:left;text-align:center;border-right:2px solid #E9E9E9;width:50%;}
+.detail-right{float:left;text-align:center;width:50%;}
+.detail-tit{color:#9F9F9F;}
+.tixian-btn{width:80%;background-color: #1C41B3;color:#B9C8F0;border-radius: 40px;}
+.tixian-disable{color:#6584DF;}
+.opa{opacity: 0.9;}
+.tip-tixian{text-align: center;font-size:14px;color:#AEAEAE;margin-top:20px;}
+.tip-tixian-last{text-align: center;font-size:14px;color:#AEAEAE;margin-top:20px;margin-bottom:30px;}

@@ -1,0 +1,37 @@
+<import src="../../components/wux/toast.wxml"/>
+
+<!-- is="toast" 匹配组件中的toast提示  如果用dialog的话这就是dialog -->
+<template is="toast" data="{{ ...$wux.toast }}"/>
+
+<!--shouru.wxml-->
+<view class="up-box">
+    <view class="user-header">
+        <image class="header-img" src="{{userInfo.headimgurl}}"></image>
+    </view>
+    <view class="tip-shouyi">
+        <text>可提现 (每日更新)</text>
+        <text class="shouyi">¥{{income.can_make_cash}}元</text>
+    </view>
+</view>
+<view class="down-box">
+    <view class="shouyi-detail clearfix">
+        <view class="detail-left">
+            <view class="detail-tit">昨日</view>
+            <view class="yestoday-shouyi">¥{{income.yes_income}}元</view>
+        </view>
+        <view class="detail-right">
+            <view class="detail-tit">累计</view>
+            <view class="total-shouyi">¥{{income.total_income}}元</view>
+        </view>
+    </view>
+    <view class="tixian-container" wx:if="{{!income.make_cash_progressing}}">
+        <button hover-class="opa" class="tixian-btn" bindtap="clickMakeCash" data-cash="{{income.can_make_cash}}">提现到微信钱包</button>
+    </view>
+
+    <view class="tixian-container" wx:else>
+        <button hover-class="opa" class="tixian-btn">¥{{income.make_cash_progressing}}元正在提现</button>
+    </view>
+
+    <view class="tip-tixian">手续费1%</view>
+    <view class="tip-tixian-last">5-7个工作日内到账</view>
+</view>

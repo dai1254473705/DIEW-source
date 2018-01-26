@@ -1,0 +1,4 @@
+/* Disclaimer.wxss */
+.disclaimer{padding:20px 15px;}
+.header-item{font-size:18px;font-weight:bold;line-height:30px;}
+.item-content{font-size:16px;margin-top:40px;line-height:25px;}

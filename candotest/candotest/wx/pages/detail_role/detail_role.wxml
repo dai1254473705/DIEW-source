@@ -1,0 +1,40 @@
+<!--detail_role.wxml-->
+<view class="role-container">
+    <view class="role-item">
+        <view class="role-tit">YouCanDo是什么?</view>
+        <view class="role-content">YouCanDo是一款便捷的知识付费工具,你可以将您的知识、才华、资料装进一个付费链接.他人付费后可以查看内容,而您将获得收益.我们相信,知识有价,值得付费.</view>
+    </view>
+
+    <view class="role-item">
+        <view class="role-tit">我将如何收益?</view>
+        <view class="role-content">在创建者许可的情况下,您可以将该页面直接分享给您的微信好友,您将自动获得来自创建者的分成.</view>
+    </view>
+
+    <view class="role-item">
+        <view class="role-tit">我希望我的朋友帮助传播,怎么办?</view>
+        <view class="role-content">您可以勾选"允许好友转发",这样您的朋友可以转发并获得收入.</view>
+    </view>
+
+    <view class="role-item">
+        <view class="role-tit">我的分享比较私密,不希望别人转发,怎么办?</view>
+        <view class="role-content">您可以取消勾选"允许好友转发",这样您的消息将无法被别人直接转发.</view>
+    </view>
+
+    <view class="role-item">
+        <view class="role-tit">我觉得小程序很棒,希望集成在我自己的公众号中,怎么做?</view>
+        <view class="role-content">如果您希望通过YouCanDo为您的公众号带来收入,请在公众号:YouCanDo 中留言,我们的工作人员将与您联系.</view>
+    </view>
+
+    <view class="role-item">
+        <view class="role-tit">我将如何提现?</view>
+        <view class="role-content">打开小程序,通过主页面点击收益,将收益提现到微信钱包 (每天上限2万)</view>
+    </view>
+
+    <view class="role-item">
+        <view class="role-tit">还有哪些注意事项?</view>
+        <view class="role-content">请勿将 YouCanDo 用于信用卡套现.<br/>
+        请勿分享色情、谣言及其他违禁内容.<br/>
+        YouCanDo 有权在收到举报后,删除相应内容,并没收其所得.</view>
+    </view>
+
+</view>

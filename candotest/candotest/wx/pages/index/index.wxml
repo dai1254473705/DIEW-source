@@ -1,0 +1,49 @@
+<import src="../../components/wux/toast.wxml"/>
+
+<!-- is="toast" 匹配组件中的toast提示  如果用dialog的话这就是dialog -->
+<template is="toast" data="{{ ...$wux.toast }}"/>
+
+<!--index.wxml-->
+<view class="wrap-container">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="main-form">
+      <view class="item-container">
+        <view class="tit-name">标题</view>
+        <view class="input-box">
+          <input class="main-input" name="title" placeholder="如：PPT设计模板三套" />
+        </view>
+      </view>
+      <view class="item-container">
+        <view class="tit-name">查询费用</view>
+        <view class="input-box">
+          <input class="main-input" type="number" min="1" name="price" placeholder="介于1到100元，如：10.00" />
+        </view>
+      </view>
+      <view class="item-container">
+        <view class="tit-name">查询内容（如：下载链接、解压密码等）</view>
+        <view class="input-box">
+          <textarea name="content" class="main-textarea"></textarea>
+        </view>
+      </view>
+
+      <view class="item-container" wx:if="{{is_share}}">
+        <radio-group name="is_share">
+          <label>
+              <checkbox value="1" checked="false"/>
+              允许好友转发
+          </label>
+        </radio-group>
+      </view>
+
+    </view>
+    <view class="submit-box">
+        <button hover-class="opa" class="submit-btn" formType="submit">发布</button>
+    </view>
+  </form>
+  <view class="tip-container">
+    <view class="tip-item tip-a">您今天还可以发布{{pub_total}}条新消息</view>
+    <view bindtap="go_detail_role" class="tip-item tip-b">详细规则</view>
+    <view bindtap="go_disclaimer" class="tip-item tip-c">免责声明</view>
+    
+  </view>
+</view>

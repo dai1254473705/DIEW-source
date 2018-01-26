@@ -1,0 +1,31 @@
+<import src="../../components/wux/toast.wxml"/>
+
+<!-- is="toast" 匹配组件中的toast提示  如果用dialog的话这就是dialog -->
+<template is="toast" data="{{ ...$wux.toast }}"/>
+
+<!--detail.wxml-->
+<view class="detail-tit">{{inquire.title}}</view>
+<view class="logo-container">
+    <image class="logo-img" src="../../images/logo.jpg"></image>
+    <view class="logo-text">YouCanDo</view>
+</view>
+
+<view class="detail-content">
+
+    <view  wx:if="{{inquire.is_show}}">
+      <view class="content-tip">查询内容</view>
+      <textarea class="main-textarea" value="{{inquire.content}}" />
+    </view>
+
+    <view class="pay-container" wx:else>
+        <button hover-class="opa" bindtap="goToPay" class="pay-btn">支付 ¥ {{inquire.price}} 元查看内容</button>
+    </view>
+
+</view>
+
+
+
+<view class="tip-box">
+    <view class="tip-text">觉得还不错? 那就让更多的人知道吧! 还可以获得收益哦</view>
+    <view class="detail-role" bindtap="go_detail_role">详细规则</view>
+</view>

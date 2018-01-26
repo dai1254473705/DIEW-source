@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<import src="../template/nointernet.wxml" />
+<loading hidden="{{hideloadhud}}">正在加载</loading>
+<view wx:if="{{net}}" class="container" style="position:relative;">
+  <view class="hideshade" style="display:{{displaystyle}}"></view>
+  <block wx:for="{{list}}" wx:key="BusinessID">
+      <view bindtap="jumpPage" data-aid="{{item.BusinessID}}" class="itembox">
+        <view class="leftbox">
+          <text class="title shorttitle">{{item.ShortName}}</text>
+          <view class="iteminfo">
+            <text wx:if="{{item.IsTop >0}}" class="tag" style="margin-right:30rpx;{{lineHeight}}">置顶</text>
+            <image wx:if="{{item.DoctorAvatar.length>0 &&item.IsTop ==0}}" class="smallavatar" src="{{item.DoctorAvatar}}" mode="widthFix" style="margin-right:30rpx;"></image>
+            <text wx:if="{{item.DoctorName.length>0}}" class="text" style="margin-right:30rpx;">{{item.DoctorName}}</text>
+            <view class="view_num"><image class="icon_view" src="../../images/view@2x.png"></image><text class="text">{{item.BrowseQuantity}}</text></view>
+          </view>
+        </view>
+        <view class="itemimage">
+          <image src="{{item.PicturePath}}" mode="widthFix"></image>
+        </view>
+      </view>
+  </block>
+  <text class="loadingtext">{{loadtext}}</text>
+</view>
+<template wx:else is="nointernet"/>

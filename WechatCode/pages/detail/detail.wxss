@@ -1,0 +1,112 @@
+/**detail.wxss**/
+page {
+    background-color: #f8f8f8;
+}
+.article_box {
+    background-color: #fff;
+    padding:32rpx 24rpx;
+    margin-bottom: 24rpx;
+}
+.doctor_box {
+    background-color: #F1F1F1;
+    margin: 0 auto 22rpx auto;
+    padding:20rpx 15rpx 15rpx 15rpx;
+    display: flex;
+    flex-direction: row;
+}
+.article_bottom_box {
+    margin-top:30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tag_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.related_box {
+    background-color: #fff;
+}
+.article_title {
+    color:#333;
+    font-size:38rpx;
+    display: block;
+}
+.article_info {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: solid 1rpx #efefef;
+    padding:22rpx 0;
+    margin-bottom:22rpx;
+}
+.article_info_text {
+    color:#828282;
+    font-size:28rpx;
+}
+.article_content {
+    font-size:32rpx;
+    line-height: 54rpx;
+    color: #7f7f7f;
+    display: block;
+}
+.article_tag {
+    background-color: #efefef;
+    font-size: 24rpx;
+    color: #666;
+    padding:14rpx 31rpx;
+    border-radius: 10rpx;
+    margin-right:10rpx;
+}
+.related_title {
+    border-left:solid 10rpx #129AEE;
+    padding-left: 10rpx;
+    box-sizing: border-box;
+    color: #696969;
+    font-size: 30rpx;
+}
+.linebox {
+    border-bottom: solid 1rpx #efefef;
+    margin-left: 26rpx;
+    padding: 16rpx 0;
+}
+.related_list {
+    margin: 0 40rpx;
+    padding:26rpx 0;
+    border-bottom: solid 1rpx #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size:32rpx;
+    color: #1C1C1C;
+}
+.doctor_name {
+    font-size:28rpx;
+    color: #333;
+    margin-right:20rpx;
+}
+.doctor_unit {
+    font-size: 26rpx;
+    color: #333;
+    margin-right:20rpx;
+}
+/*文字行高,加在text上时,必须设置display为block,inline-block,否则无效*/
+.doctor_desc {
+    font-size: 24rpx;
+    line-height: 26rpx;
+    color: #666;
+    display: block;
+    margin-top:10rpx;
+}
+.bigavatar {
+    margin-right:20rpx;
+}
+.article_source {
+    font-size:28rpx;
+    color:#999;
+}
+

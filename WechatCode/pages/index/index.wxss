@@ -1,0 +1,22 @@
+/**index.wxss**/
+.tips {
+  font-size:30rpx;
+  color:#666;
+  display: block;
+  border-bottom: solid 1rpx #dfdfdf;
+  padding:24rpx 28rpx;
+  margin-bottom: 25rpx;
+}
+.menu_box {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu {
+  width:372rpx;
+  height:372rpx;
+  margin-bottom:6rpx;
+}

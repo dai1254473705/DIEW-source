@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container"> 
+  <text class="tips">选择您关注的内容，获取健康知识</text>
+  <view class="menu_box">
+    <image class="menu" bindtap="jumpPage" data-sid="a959f230-f1d2-11e6-9552-00163e1061d6" data-sname="营养养生" src="../../images/menu1@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959f0b4-f1d2-11e6-9552-00163e1061d6"  data-sname="小疾病" src="../../images/menu2@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959f037-f1d2-11e6-9552-00163e1061d6"  data-sname="消化" src="../../images/menu3@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959ef31-f1d2-11e6-9552-00163e1061d6"  data-sname="皮肤美容" src="../../images/menu4@2x.png"></image>
+
+    <image class="menu" bindtap="jumpPage" data-sid="a959f139-f1d2-11e6-9552-00163e1061d6"  data-sname="心血管" src="../../images/menu5@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959efb5-f1d2-11e6-9552-00163e1061d6"  data-sname="糖尿病" src="../../images/menu6@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959e5f4-f1d2-11e6-9552-00163e1061d6" data-sname="风湿" src="../../images/menu7@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959eada-f1d2-11e6-9552-00163e1061d6"  data-sname="骨病'" src="../../images/menu8@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959f3a6-f1d2-11e6-9552-00163e1061d6"  data-sname="孕产'" src="../../images/menu9@2x.png"></image>
+
+    <image class="menu" bindtap="jumpPage" data-sid="a959f326-f1d2-11e6-9552-00163e1061d6"  data-sname="育儿" src="../../images/menu10@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959ee1e-f1d2-11e6-9552-00163e1061d6"  data-sname="男性" src="../../images/menu11@2x.png"></image>
+    <image class="menu" bindtap="jumpPage" data-sid="a959eeaa-f1d2-11e6-9552-00163e1061d6"  data-sname="女性" src="../../images/menu12@2x.png"></image>
+  </view>
+</view>

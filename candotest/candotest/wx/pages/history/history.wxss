@@ -1,0 +1,13 @@
+page{background-color: #1C41B3;}
+.item-container{padding:10px 15px 20px;}
+.item{
+    box-sizing: border-box;width:100%;background-color: #fff;  
+    height:70px;border-radius: 5px;padding-left:15px;position:relative;margin-bottom:10px;
+}
+.item-main{padding-left:40px;}
+.item-type{width:27px;font-size:14px;color:#D86A6A;height:100%;border-right:1px solid #eee;position:absolute;top:0;left:15px;padding:17px 15px 0 0;}
+.item-tit{font-size:16px;font-weight:bold;padding:13px 0 3px 0;}
+.item-count{font-size:14px;color:#999;}
+.right-icon{width:16px;height:16px;position:absolute;top:28px;right:10px;}
+.blue{color:blue;}
+.green{color:green;}

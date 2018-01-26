@@ -1,0 +1,14 @@
+/**list.wxss**/
+.container {
+  padding:0 28rpx;
+}
+.loadingtext {
+  text-align: center;
+  font-size:28rpx;
+  color:#666;
+  padding:40rpx 0;
+}
+.shorttitle {
+   height:80rpx;
+   overflow:hidden;
+}

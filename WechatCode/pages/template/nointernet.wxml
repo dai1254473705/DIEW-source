@@ -1,0 +1,7 @@
+<!--没有网络-->
+<template name="nointernet">
+    <view class="nointernet" bindtap="netrefresh" >
+        <image class="netimage" src="../../images/nonet@2x.png"></image>
+        <text class="nettext">网络不给力,点击屏幕重试~</text>
+    </view>
+</template>

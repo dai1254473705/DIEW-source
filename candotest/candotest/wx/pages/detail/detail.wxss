@@ -1,0 +1,15 @@
+/* detail.wxss */
+.detail-tit{color:#fff;text-align: center;font-size:16px;padding-top:15px;}
+page{background-color: #0E2159}
+.logo-img{width:200px;height:200px;}
+.logo-text{color: #fff;margin-top: 10px;font-size: 20px;}
+.logo-container{padding:70px 0;text-align: center;}
+.detail-content{padding:10px 15px;}
+.content-tip{color:#fff;font-size:16px;}
+.main-textarea{background-color: #fff;width:100%;border-radius: 5px;padding:10px 15px;box-sizing: border-box;margin-top:10px;}
+.tip-box{padding-top:30px;padding-bottom: 50px;}
+.tip-text{font-size:12px;text-align: center;color:#fff;}
+.detail-role{font-size:12px;margin-top:15px;text-decoration:underline;color:#6584DF;text-align: center;}
+
+.pay-container{margin-top: 20px;}
+.pay-btn{width:80%;background-color: #1C41B3;color:#fff;border-radius: 40px;}

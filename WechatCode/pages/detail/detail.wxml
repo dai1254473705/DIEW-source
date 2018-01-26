@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<import src="../../utils/wxParse/wxParse.wxml"/> 
+<import src="../template/nointernet.wxml" />
+<loading hidden="{{hideloadhud}}">正在加载</loading>
+<template wx:if="{{!net}}" is="nointernet"/>
+<block wx:else>
+<view wx:if="{{hideloadhud}}" class="container">
+  <view class="article_box">
+    <text class="article_title">{{content.NAME}}</text>
+    <view class="article_info">
+      <text class="article_info_text" style="margin-left:27rpx">浏览 {{content.BrowseQuantity}}</text>
+    </view>
+    <view wx:if="{{content.DoctorName}}" class="doctor_box">
+      <image class="bigavatar" src="{{content.DoctorAvatar}}" mode="widthFix" style="margin-right:30rpx;"></image>
+      <view>
+      <view>
+        <text class="doctor_name">{{content.DoctorName}}</text>
+        <text class="doctor_unit">{{content.Hospital}} {{content.Departments}} {{content.JobName}}</text>
+      </view>
+      <text class="doctor_desc">{{content.SimpleIntroduction}}</text> 
+      </view> 
+    </view>
+    <template is="wxParse" data="{{wxParseData:articlecontent.nodes}}"/>
+    <text class="article_source">{{content.Source}}</text>
+    <view class="article_bottom_box">
+      <view wx:if="{{content.Label.length>0}}" class="tag_box">
+        <block wx:for="{{labels}}">
+        <text class="article_tag">{{item}}</text>
+        </block>
+      </view>
+      <view class="zan">
+        <image class="icon_zan" src="../../images/zan@2x.png"></image><text class="article_info_text">{{content.LikeQuantity}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="related_box" style="position:relative;">
+    <view class="hideshade" style="display:{{displaystyle}}"></view>
+    <view class="linebox">
+      <text class="related_title">相关文章</text>
+    </view>
+    <block wx:for="{{related}}" wx:key="ArticleID">
+    <view bindtap="jumpPage" data-aid="{{item.ArticleID}}" class="related_list">
+      <text class="related_list_text">{{item.Name}}</text>
+      <image src="../../images/rightarrow@2x.png" class="icon_rightarrow"></image>
+    </view>
+    </block>
+  </view>
+</view>
+</block>
