@@ -1,0 +1,56 @@
+// 标的列表数据展示处理函数
+var  bid_list_deal={
+  //格式化年化利率
+  formatRate:function(rate){
+    return Number(rate*100).toFixed(2);
+  },
+  //periodUnit
+  periodUnit: function (periodUnit){
+    var newPeriodUnit;
+    switch (periodUnit){
+      case '1':
+        newPeriodUnit= '年';
+        break;
+      case '2':
+        newPeriodUnit ='月';
+        break;
+      case '3':
+        newPeriodUnit ='日';
+        break;
+      default:
+        newPeriodUnit = periodUnit;
+    }
+    return newPeriodUnit ;
+  },
+  //钱数转成万
+  million:function (money) {
+    var str = 0;
+    var reg = getRegExp("^([1-9]\d{0,9}|0)([.]?|(\.\d{1,2})?)$","");
+    reg.test(money);
+    if (reg) {
+      var start = money % 10000;
+      var two = money / 10000;
+      if (start != '0') {
+        str = parseInt(two * 100) / 100;
+      } else {
+        str = two;
+      }
+    } else {
+      str = money;
+    }
+    return str;
+  },
+  //判断进度条颜色
+  checkProgress: function (loanSchedule){
+    var color = 'primary';
+    if (loanSchedule<100){
+      color = 'primary';
+    }else{
+      color = '#BCBAB6';
+    }
+    return color;
+  }
+};
+module.exports = {
+  'bidListDeal':bid_list_deal
+};

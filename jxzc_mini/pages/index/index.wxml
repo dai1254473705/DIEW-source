@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- 佳享资产 -->
+<view class="container"
+ bindtouchstart="countStartMove" 
+ bindtap="countTap" 
+ bindlongpress="countLongPress" 
+ bindtouchend="countEndMove" >
+  <view class="bg_container" >
+     <image src='../images/jiaxiang.png' mode="scaleToFill"></image> 
+     <button capture-catch:tap='btnPhone' class="btn_kefu">联系客服</button> 
+  </view>
+</view>

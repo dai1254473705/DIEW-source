@@ -1,0 +1,34 @@
+ <wxs src="./bidlist.wxs" module="bidlist" />
+<template name="bidlist">
+  <view class="bid_list">
+    <block wx:for='{{bidData}}'wx:key='bidNO'>
+    <view class="bid_item">
+      <view class="bid_title">
+      <text class='link borderBttom'>{{item.loanType}}-{{item.bidNo}}</text>
+      </view>
+      <view class="bid_con">
+        <view class="bid_con_left">
+          <view class="bid_con_sub warn"><text>{{bidlist.bidListDeal.formatRate(item.rate)}}</text><text class="bid_fuhao">%</text></view>
+          <text>预期年化利率</text>
+        </view>
+        <view class="bid_con_right">
+          <view class="bid_con_sub warn"><text>{{item.period}}</text><text class="bid_fuhao">{{bidlist.bidListDeal.periodUnit(item.periodUnit)}}</text></view>
+          <text>{{item.repaymentType}}</text>
+        </view>
+        <view class="bid_btn" >
+         <block wx:if="{{item.loanSchedule<100}}">
+          <button class='deFontSize' size='mini' type='primary' >立即投标</button>
+          </block>
+         <block wx:else>
+          <button class='deFontSize' size='mini' type='default' disabled="true">已满标</button>
+          </block>
+       </view>
+      </view>
+      <view class="bid_progress">
+       <progress percent='{{item.loanSchedule }}' show-info='true' stroke-width='5' activeColor='{{bidlist.bidListDeal.checkProgress(item.loanSchedule)}}' active='true'></progress> 
+       <text>{{bidlist.bidListDeal.million(item.amountInvest) }}万元/ {{bidlist.bidListDeal.million(item.amount) }}万元</text>
+      </view>
+    </view>
+</block>
+  </view>
+  </template>

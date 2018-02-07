@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/jiaxiang/jiaxiang",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/audio/audio"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+
+  "networkTimeout":{
+    "request":"3000",
+    "connectSocket":"3000",
+    "uploadFile":"3000",
+    "downloadFile":"3000"
+  }
+}

@@ -1,0 +1,42 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+.container{
+  margin: 0;
+  padding:0;
+}
+.bg_container{
+  position: relative;
+}
+image{
+  width:750rpx;
+  height: 1206rpx;
+  display:block;
+}
+.btn_kefu{
+  position: absolute;
+  bottom:50rpx;
+  left:50%;
+  width:590rpx;
+  background:#eb4b2f;
+  color:#fff;
+  margin-left:-295rpx;
+}

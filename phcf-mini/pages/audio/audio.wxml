@@ -1,0 +1,4 @@
+<view >
+ <button class="audio"  bindtouchstart='startRecord' bindtouchend='endRecord'>开始录音</button>
+ <button class="audio"  bindtap='phoneNum' >联系客服</button>  
+</view>

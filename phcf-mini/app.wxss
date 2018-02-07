@@ -1,0 +1,71 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+  background: #f8f8f8
+} 
+.bid_item{
+  width: 750rpx;
+}
+.bid_title{
+  font-size: 14px;
+}
+/* color */
+.primary{
+  color:#1AAD19
+  }
+.warn{
+  color: #E64340
+  }
+
+ /* link */
+.link{color: #586C94}
+
+ /* background */
+.bgColorDefault{background: #EFEFF4}
+.bgColorActive{background: #ECECEC}
+
+ /* line */
+.lineColorLight{background: #E5E5E5}
+.lineColorDark{background: #BCBAB6}
+
+ /* text */
+.textColorTitle{color: #000000}
+.textColorTips{color: #B2B2B2}
+.textColorWarn{color: #E64340}
+.textColorGray{color: #999999}
+
+/* 默认子弟大小 */
+.deFontSize,text{
+  font-size: 14px;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.borderBttom::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #E5E5E5;
+    color: #E5E5E5;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 15px;
+}
+

@@ -1,0 +1,7 @@
+<!-- 佳享资产 -->
+<view class="container">
+  <view class="bg_container">
+     <image src='../images/jiaxiang.png' mode="scaleToFill"></image> 
+     <button bindtap='btnPhone' class="btn_kefu">联系客服</button> 
+  </view>
+</view>

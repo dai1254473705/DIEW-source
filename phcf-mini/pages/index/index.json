@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#000000",
+  "navigationBarTitleText": "WeChat",
+  "navigationBarTextStyle": "light",
+  "disableScroll":"false",
+  "backgroundTextStyle":"dark",
+  "enablePullDownRefresh":"true",
+  "onReachBottomDistance":"50"
+}
